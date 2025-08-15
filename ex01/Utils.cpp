@@ -8,7 +8,7 @@ bool getLineOrEof(const std::string &prompt, std::string& out) {
 	std::cout << prompt;
 	if (!std::getline(std::cin, out))
 		return false; //EOF or stream err
-	return false;
+	return true;
 }
 
 bool getNoEmptyLine(const std::string &prompt, std::string& out) {
