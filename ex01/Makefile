@@ -6,7 +6,7 @@
 #    By: mmitkovi <mmitkovi@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/11/06 13:16:06 by mmitkovi          #+#    #+#              #
-#    Updated: 2025/11/06 13:16:10 by mmitkovi         ###   ########.fr        #
+#    Updated: 2025/11/12 16:21:41 by mmitkovi         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -41,4 +41,3 @@ fclean: clean
 re: fclean all
 
 .PHONY: all clean fclean re
-

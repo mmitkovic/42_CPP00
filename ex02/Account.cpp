@@ -9,11 +9,11 @@ int Account::_totalNbDeposits = 0;
 int Account::_totalNbWithdrawals = 0;
 
 Account::Account(void) : _accountIndex(0), _amount(0), _nbDeposits(0), _nbWithdrawals(0) {
-    std::cout << "---";
 }
 
 Account::Account(int initial_deposit) : _accountIndex(_nbAccounts++), _amount(initial_deposit) {
-    _totalAmount += _amount;
+    _amount += 
+	_totalAmount += _amount;
     _nbDeposits ++;
     std::cout << "Index:" << _accountIndex << ";";
     std::cout << "Amount:" << _amount << ";";
@@ -42,15 +42,18 @@ void Account::displayStatus() const {
         std::cout << "withdrawals:" << _totalNbWithdrawals << ";";
         std::cout << std::endl;
     }
-    {
-        std::cout << "Index:" << _accountIndex << ";";
-        std::cout << std::endl;
-    }
+    // {
+    //     std::cout << "Index:" << _accountIndex << ";";
+    //     std::cout << std::endl;
+    // }
 
 }
 
 // SET
 void Account::makeDeposit( int deposit ) { _totalAmount += deposit; }
-bool Account::makeWithdrawal( int withdraw ) {_totalAmount -= withdraw; }
+bool Account::makeWithdrawal( int withdraw ) {
+	_totalAmount -= withdraw;
+	return true; 
+}
 int Account::checkAmount() const {return _totalAmount; }
 
