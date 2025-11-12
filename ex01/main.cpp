@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   main.cpp                                           :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: mmitkovi <mmitkovi@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2025/11/06 13:16:17 by mmitkovi          #+#    #+#             */
+/*   Updated: 2025/11/06 13:17:09 by mmitkovi         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "PhoneBook.hpp"
 #include "Contact.hpp"
 #include "Utils.hpp"
@@ -15,11 +27,11 @@ int main() {
 		<< std::setw(10) << "EXIT" << '|' << std::endl;
 	while (1)
 	{
-		std::cout << "Pick between three options: ";
+		std::cout << "Pick between three options ([A]dd, [S]earch, [E]xit): ";
 		std::string line;
 		std::getline(std::cin, line);
 
-		/* transform every input to uppercases */
+		// transform every user input to uppercases
 		std::transform(line.begin(), line.end(), line.begin(), ToUpper());
 
 		/* options */
@@ -37,7 +49,7 @@ int main() {
 				std::cout << "EOF detected. Exiting.\n";
 				break ;
 			}
-			/* if epmty lien -> repropt */
+			/* if epmty line -> reprompt */
 			if (line.empty()) {
 				std::cout << "Please type a number.\n";
 				continue ;

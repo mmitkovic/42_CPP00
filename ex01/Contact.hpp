@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   Contact.hpp                                        :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: mmitkovi <mmitkovi@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2025/11/06 13:26:28 by mmitkovi          #+#    #+#             */
+/*   Updated: 2025/11/06 13:26:31 by mmitkovi         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #ifndef CONTACT_HPP
 #define CONTACT_HPP
 
@@ -5,7 +17,6 @@
 
 class Contact {
 private:
-	/* Private data - cannot be accessed directly from outside this class */
 	std::string	firstName;
 	std::string	lastName;
 	std::string	nickname;

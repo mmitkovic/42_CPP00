@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   PhoneBook.hpp                                      :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: mmitkovi <mmitkovi@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2025/11/06 13:27:34 by mmitkovi          #+#    #+#             */
+/*   Updated: 2025/11/06 13:27:35 by mmitkovi         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #ifndef PHONEBOOK_HPP
 #define PHONEBOOK_HPP
 
@@ -5,8 +17,8 @@
 
 class PhoneBook {
 private:
-	Contact contacts[8]; // Fixed-size array of 8 Contacts objects
-	int next; // Index where the next contact will be stored
+	Contact contacts[8];
+	int next; // updtae
 public:
 	PhoneBook(); // sets next=0, size=0
 	void add(const Contact& c);
