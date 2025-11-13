@@ -30,7 +30,7 @@ public:
 	static void	displayAccountsInfos( void );
 
 	Account( int initial_deposit ); // this is the way to construct the object (Accout new_accout; - not possible)
-	// ~Account( void );
+	~Account( void );
 
 	void	makeDeposit( int deposit );
 	bool	makeWithdrawal( int withdrawal );
