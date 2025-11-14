@@ -6,17 +6,17 @@
 #    By: mmitkovi <mmitkovi@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/11/14 11:52:59 by mmitkovi          #+#    #+#              #
-#    Updated: 2025/11/14 11:58:35 by mmitkovi         ###   ########.fr        #
+#    Updated: 2025/11/14 12:17:06 by mmitkovi         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME    := account
+NAME	:= account
 
-CXX     := c++
+CXX		:= c++
 CXXFLAGS:= -Wall -Wextra -Werror -std=c++98
 
-SRCS    := test.cpp \ 
-			Account.cpp \
+SRCS	:= tests.cpp \
+			Account.cpp
 
 OBJS	:= $(SRCS:.cpp=.o)
 
