@@ -1,4 +1,7 @@
 #include <iostream>
+#include <ctime>
+#include <locale>
+#include <iterator>
 #include "Account.hpp"
 
 /* --- Constructor creation --- */
@@ -95,9 +98,9 @@ int Account::checkAmount() const {return _totalAmount; }
 
 void Account::_displayTimestamp(void)
 {
-	// int 
-	std::cout << "--- ";
-	std::cout << ";";
-	// gettimeofday();
+	char tt[100];
+	std::time_t now = std::time(NULL);
+	std::strftime(tt, 100, "%Y%m%d_%H%M%S", std::localtime(&now));
+	std::cout << "[" << tt << "] ";
 }
 
